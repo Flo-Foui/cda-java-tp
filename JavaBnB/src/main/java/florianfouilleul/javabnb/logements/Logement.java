@@ -1,21 +1,28 @@
 package florianfouilleul.javabnb.logements;
 
+import florianfouilleul.javabnb.utilisateurs.Hote;
 import florianfouilleul.javabnb.utilisateurs.Personne;
 
 public class Logement {
 
-    private Personne hote;
-    private int tarifParNuit;
-    private String adresse;
-    private int superficie;
-    private int nbVoyageursMax;
+    protected Hote hote;
+    protected int tarifParNuit;
+    protected String adresse;
+    protected int superficie;
+    protected int nbVoyageursMax;
 
-    public Logement(Personne hote, int tarifParNuit, String adresse, int superficie, int nbVoyageursMax) {
+    public Logement(Hote hote, int tarifParNuit, String adresse, int superficie, int nbVoyageursMax) {
         this.hote = hote;
         this.tarifParNuit = tarifParNuit;
         this.adresse = adresse;
         this.superficie = superficie;
         this.nbVoyageursMax = nbVoyageursMax;
+    }
+
+    public Logement(Hote hote, String adresse, int superficie) {
+        this.hote = hote;
+        this.adresse = adresse;
+        this.superficie = superficie;
     }
 
     public void afficher() {

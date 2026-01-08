@@ -13,7 +13,7 @@ public class Personne {
     }
 
     public void afficher() {
-        System.out.println(prenom + " " + nom + " (" + age + " ans)");
+        System.out.print(prenom + " " + nom + " (" + age + " ans)");
     }
 
 }

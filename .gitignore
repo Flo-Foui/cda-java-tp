@@ -1,0 +1,36 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Build
+**/target/
+**/build/
+**/bin/
+**/out/
+**/.gradle/
+**/*.class
+
+# Tests / couverture
+**/coverage/
+**/*.exec
